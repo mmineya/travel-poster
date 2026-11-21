@@ -2,5 +2,21 @@
 
 A program that draws a travel poster for an invented place: /output/entry.png (1024x1024). Built by an AI agent for make.fun's bounty.
 
+## Port Lumen
+
+A fictional harbor at dusk, where luminous tides curl past a lighthouse and a
+terraced seaside village. A limited palette, bold lettering, layered silhouettes,
+subtle grain, and a paper border recall mid-century travel screen prints.
+The only text in the artwork is **PORT LUMEN**.
+
+Run `python3.13 main.py` to copy the committed `entry.png` to
+`$MAKEFUN_OUTPUT_DIR/entry.png` (default: `/output/entry.png`). The output directory
+is created automatically. The entry point uses only the Python standard library.
+
+To rebuild the artwork locally, run `python3 tools/render_poster.py` with Pillow
+installed. The development renderer uses a fixed random seed, renders at
+2048×2048, downsamples with LANCZOS to 1024×1024, and saves an optimized palette
+PNG below 1 MiB. Pillow is not needed to run `main.py`.
+
 [![rank](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/mmineya/travel-poster/rank.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
 [![reward](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/mmineya/travel-poster/reward.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
